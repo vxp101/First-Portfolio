@@ -1,0 +1,105 @@
+/* Decorates Header */
+header {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+/* Fits image to screen */
+img {
+    width: 200px;
+    height: 300px;
+}
+/* creates background thats easier on the eyes */
+html {
+    margin: 10px;
+    background-color: lightslategrey;
+}
+/* Decorates all the sections in article */
+article {
+    height: 600px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightgray;
+    border: .5px solid black;
+}
+
+article h2, .intro{
+    text-align: center;
+}
+
+
+.image {
+    border: .5px solid black;
+    float: left;
+}
+
+.learning-languages {
+    display: flex;
+    list-style-position: inside;
+    text-align: center;
+}
+/* Fixes about to not touch everything and sets width to 450px */
+.about {
+    text-align: center;
+}
+/* Centers and colors footers background to grey */
+footer {
+    text-align: center;
+    border: .5px solid darkgray;
+    background-color: rgb(177, 196, 196);
+}
+
+
+/* All down contribute to changing the color according to whats done
+ anchor tags */
+a:link {
+    color: rgb(148, 131, 109);
+}
+
+a:visited {
+    color: rgb(112, 82, 36)
+}
+
+a:hover {
+    color: rgb(148, 20, 20);
+}
+
+a:active {
+    color: rgb(46, 15, 15);
+}
+
+@media screen and (max-width: 900px){
+    img, .about, .intro {
+        position: relative;
+    }
+
+    img {
+        font-size: 20px;
+    }
+    article {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .learning-languages {
+        text-align: left;
+        display: initial;
+    }
+    .image {
+        width: auto;
+        float: none;
+    }
+
+    img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    article h3 {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 10px
+    }
+}
